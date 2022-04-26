@@ -107,7 +107,7 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="ml-auto">
-                            <a class="btn btn-custom" href="#">Get Appointment</a>
+                            <a class="btn btn-custom" href="location.html">Get Appointment</a>
                         </div>
                     </div>
                 </nav>
@@ -304,7 +304,7 @@
                                     <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Post Comment" class="btn btn-custom">
+                                    <a class="btn btn-custom" onclick="postCommentAction()">Post Comment</a>
                                 </div>
                             </form>
                         </div>
@@ -754,5 +754,24 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script>
+            function postCommentAction()
+            {
+                let name = document.getElementbyId("name").value
+                let email = document.getElementbyId("email").value
+                let website = document.getElementbyId("website").value
+                let message = document.getElementbyId("message").value
+
+                let emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+                if (name.length != 0 && email.length != 0 && message.length != 0 && emailRegEx.test(email) && website.length == 0)
+                {
+                    Swal.fire('Comment Posted!', '', 'success')
+                }
+            }
+        </script>
+
     </body>
 </html>

@@ -107,7 +107,7 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="ml-auto">
-                            <a class="btn btn-custom" href="#">Get Appointment</a>
+                            <a class="btn btn-custom" href="location.html">Get Appointment</a>
                         </div>
                     </div>
                 </nav>
@@ -207,56 +207,56 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-car-wash-1"></i>
                             <h3>Exterior Washing</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-car-wash"></i>
                             <h3>Interior Washing</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-vacuum-cleaner"></i>
                             <h3>Vacuum Cleaning</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-seat"></i>
                             <h3>Seats Washing</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-car-service"></i>
                             <h3>Window Wiping</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-car-service-2"></i>
                             <h3>Wet Cleaning</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-car-wash"></i>
                             <h3>Oil Changing</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
+                        <div class="service-item card">
                             <i class="flaticon-brush-1"></i>
                             <h3>Brake Reparing</h3>
                             <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
@@ -276,7 +276,7 @@
                         <div class="facts-item">
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">25</h3>
+                                <h3 data-toggle="counter-up">50</h3>
                                 <p>Service Points</p>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                         <div class="facts-item">
                             <i class="fa fa-user"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">350</h3>
+                                <h3 data-toggle="counter-up">400</h3>
                                 <p>Engineers & Workers</p>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                         <div class="facts-item">
                             <i class="fa fa-users"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">1500</h3>
+                                <h3 data-toggle="counter-up">3000</h3>
                                 <p>Happy Clients</p>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                         <div class="facts-item">
                             <i class="fa fa-check"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">5000</h3>
+                                <h3 data-toggle="counter-up">6000</h3>
                                 <p>Projects Completed</p>
                             </div>
                         </div>
@@ -338,7 +338,7 @@
                                 </ul>
                             </div>
                             <div class="price-footer">
-                                <a class="btn btn-custom" href="">Book Now</a>
+                                <a class="btn btn-custom" onclick="bookNowOnClick()">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -358,7 +358,7 @@
                                 </ul>
                             </div>
                             <div class="price-footer">
-                                <a class="btn btn-custom" href="">Book Now</a>
+                                <a class="btn btn-custom" onclick="bookNowOnClick()">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -378,7 +378,7 @@
                                 </ul>
                             </div>
                             <div class="price-footer">
-                                <a class="btn btn-custom" href="">Book Now</a>
+                                <a class="btn btn-custom" onclick="bookNowOnClick()">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -445,16 +445,16 @@
                             <h3>Request for a car wash</h3>
                             <form>
                                 <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
+                                    <input type="text" id="locationFormName" class="form-control" placeholder="Name" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
+                                    <input type="email" id="locationFormEmail" class="form-control" placeholder="Email" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" placeholder="Description" required="required"></textarea>
+                                    <textarea class="form-control" id="locationFormDescription" placeholder="Description" required="required"></textarea>
                                 </div>
                                 <div>
-                                    <button class="btn btn-custom" type="submit">Send Request</button>
+                                    <a class="btn btn-custom" type="submit" onclick="locationFormSendRequest()">Send Request</a>
                                 </div>
                             </form>
                         </div>
@@ -482,10 +482,10 @@
                                 <h2>Donald John</h2>
                                 <p>Engineer</p>
                                 <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/barsofbeautyIN"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://m.facebook.com/barsofbeauty"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -499,10 +499,10 @@
                                 <h2>Adam Phillips</h2>
                                 <p>Engineer</p>
                                 <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/barsofbeautyIN"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://m.facebook.com/barsofbeauty"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -516,10 +516,10 @@
                                 <h2>Thomas Olsen</h2>
                                 <p>Worker</p>
                                 <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/barsofbeautyIN"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://m.facebook.com/barsofbeauty"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -533,10 +533,10 @@
                                 <h2>James Alien</h2>
                                 <p>Worker</p>
                                 <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/barsofbeautyIN"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://m.facebook.com/barsofbeauty"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://instagram.com/barsofbeauty"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -726,10 +726,10 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-newsletter">
                             <h2>Newsletter</h2>
-                            <form>
-                                <input class="form-control" placeholder="Full Name">
-                                <input class="form-control" placeholder="Email">
-                                <button class="btn btn-custom">Submit</button>
+                            <form class="control-group">
+                                <input class="form-control" placeholder="Full Name" id="newsLetterName">
+                                <input class="form-control" placeholder="Email" id="newsLetterEmail">
+                                <a class="btn btn-custom" onclick="newsLetterSubmit()">Submit</a>
                             </form>
                         </div>
                     </div>
@@ -756,7 +756,8 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
@@ -764,4 +765,39 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
+
+    <script>
+        function locationFormSendRequest()
+        {
+            let name = document.getElementById("locationFormName").value
+            let email = document.getElementById("locationFormEmail").value
+            let message = document.getElementById("locationFormDescription").value
+
+            let emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (name.length != 0 && email.length != 0 && message.length != 0 && emailRegEx.test(email))
+            {
+                var mail = "mailto:" + email + "?subject=" + name + "&body=" + message;
+                var a = document.createElement('a');
+                a.href = mail;
+                a.click();
+            }
+        }
+
+        function bookNowOnClick()
+        {
+            Swal.fire('Booking successful!', '', 'success')
+        }
+
+        function newsLetterSubmit()
+        {
+            let name = document.getElementById("newsLetterName").value
+            let email = document.getElementById("newsLetterEmail").value
+
+            let emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (name.length != 0 && email.length != 0 && emailRegEx.test(email))
+            {
+                Swal.fire('Congratulations!', 'News Letter Successfully Subscribed.', 'success')
+            }
+        }
+    </script>
 </html>

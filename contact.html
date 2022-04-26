@@ -107,7 +107,7 @@
                             <a href="contact.html" class="nav-item nav-link active">Contact</a>
                         </div>
                         <div class="ml-auto">
-                            <a class="btn btn-custom" href="#">Get Appointment</a>
+                            <a class="btn btn-custom" href="location.html">Get Appointment</a>
                         </div>
                     </div>
                 </nav>
@@ -194,7 +194,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div>
-                                    <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                                    <a class="btn btn-custom" id="sendMessageButton" onclick="sendMessageAction()">Send Message</a>
                                 </div>
                             </form>
                         </div>
@@ -287,5 +287,24 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script>
+            function sendMessageAction()
+            {
+                let name = document.getElementById("name").value
+                let email = document.getElementById("email").value
+                let subject = document.getElementById("subject").value
+                let message = document.getElementById("message").value
+
+                let emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+                if (name.length != 0 && email.length != 0 && message.length != 0 && emailRegEx.test(email) && subject.length != 0)
+                {
+                    var mail = "mailto:" + email + "?subject=" + subject + "&body=" + message;
+                    var a = document.createElement('a');
+                    a.href = mail;
+                    a.click();
+                }
+            }
+        </script>
     </body>
 </html>
